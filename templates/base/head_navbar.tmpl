@@ -7,7 +7,7 @@
 	<div class="navbar-left">
 		<!-- the logo -->
 		<a class="item" id="navbar-logo" href="{{AppSubUrl}}/" aria-label="{{if .IsSigned}}{{ctx.Locale.Tr "dashboard"}}{{else}}{{ctx.Locale.Tr "home"}}{{end}}">
-			<img width="30" height="30" src="{{AssetUrlPrefix}}/img/logo.svg" alt="{{ctx.Locale.Tr "logo"}}" aria-hidden="true">
+			<img width="30" height="30" src="{{AssetUrlPrefix}}/logo.png" alt="{{ctx.Locale.Tr "logo"}}" aria-hidden="true">
 		</a>
 
 		<!-- mobile right menu, it must be here because in mobile view, each item is a flex column, the first item is a full row column -->
@@ -158,7 +158,7 @@
 					{{if .IsAdmin}}
 						<div class="divider"></div>
 
-						<a class="{{if .PageIsAdmin}}active {{end}}item" href="{{AppSubUrl}}/-/admin">
+						<a class="{{if .PageIsAdmin}}active {{end}}item" href="{{AppSubUrl}}/admin">
 							{{svg "octicon-server"}}
 							{{ctx.Locale.Tr "admin_panel"}}
 						</a>

@@ -64,6 +64,11 @@ func Home(ctx *context.Context) {
 	ctx.HTML(http.StatusOK, tplHome)
 }
 
+func About(ctx *context.Context) {
+	ctx.Data["Title"] = "About TTGit"
+	ctx.HTML(http.StatusOK, tplHome)
+}
+
 // HomeSitemap renders the main sitemap
 func HomeSitemap(ctx *context.Context) {
 	m := sitemap.NewSitemapIndex()
