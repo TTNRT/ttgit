@@ -136,6 +136,9 @@ func NewFuncMap() template.FuncMap {
 		"DisableWebhooks": func() bool {
 			return setting.DisableWebhooks
 		},
+		"DisableRegistration": func() bool {
+			return setting.Service.DisableRegistration
+		},
 		"DisableImportLocal": func() bool {
 			return !setting.ImportLocalPaths
 		},
